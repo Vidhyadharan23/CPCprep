@@ -5,8 +5,8 @@ using namespace std;
 int Missing(int arr[], int n)
 {
  
-    int sum = (n + 1) * (n + 2) / 2;
-    for (int i = 0; i < n; i++)
+    int sum = (n ) * (n+1) / 2;
+    for (int i = 0; i < n-1; i++)
         sum -= arr[i];
     return sum;
 }
@@ -14,10 +14,15 @@ int Missing(int arr[], int n)
 
 int main()
 {
-   int arr[]={6,4,2,1,5};
-   int n = sizeof(arr)/sizeof(arr[0]);
+     int n,i,a[100];
+    cout<<"size of array";
+    cin>>n;
+    for(i=0;i<n-1;i++)
+    {
+        cin>>a[i];
+    }
     
-    int miss = Missing(arr, n);
+    int miss = Missing(a, n);
     cout << "The missing number is "<<miss;
     
     return 0;
