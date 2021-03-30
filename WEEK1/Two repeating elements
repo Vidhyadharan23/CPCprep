@@ -2,7 +2,7 @@
 
 using namespace std;
  
-void repeating(int a[], int n)
+void repeat(int a[], int n)
 {
     int i, j;
     cout<<"\n Repeating Elements are : ";
