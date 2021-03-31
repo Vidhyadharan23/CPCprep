@@ -1,0 +1,26 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        int originalN = x;
+        long long int reversedN=0;
+        int rem;
+        while (x != 0) {
+            if (x>0){
+                rem = x % 10;
+                reversedN = reversedN * 10 + rem;
+                x /= 10;
+            }
+            else if(x<0){
+                rem = x % 10;
+                reversedN = reversedN * 10 - rem;
+                x /= 10;
+            }
+        }
+        bool t = false;
+        if (originalN == reversedN)
+            t=true;
+        else
+            t=false;
+        return t;
+    }
+};
