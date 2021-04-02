@@ -1,0 +1,32 @@
+#include<iostream>
+#include<map>
+
+using namespace std;
+
+void odd(int a[], int n)
+{
+    map<int, int> occ;
+    for(int i = 0; i < n; i++)
+    {
+        occ[a[i]]++;
+    }
+    for(int i = 0; i < n; i++)
+    {
+        if(occ[a[i]] % 2 != 0)
+        {
+            cout<<"\n The number which occurs odd number of times is : "<<a[i];
+        }
+    }
+
+}
+
+int main()
+{
+    int n,i,a;
+    cout<<"Size of array";
+    for(i=0;i<n;i++)
+    {
+     cin>>a[i];
+    }
+    odd(a,n);
+}
