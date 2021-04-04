@@ -22,14 +22,14 @@ void printPairs(int arr[], int n, int sum)
 
 //2 ptr method
 
-bool hasArrayTwoCandidates(int A[], int arr_size,
+bool hasArrayTwoCandidates(int A[], int N,
                            int sum)
 {
     int l, r;
-    sort(A, A + arr_size);
+    sort(A, A + N);
 
     l = 0;
-    r = arr_size - 1;
+    r = N - 1;
     while (l < r) {
         if (A[l] + A[r] == sum)
             return 1;
