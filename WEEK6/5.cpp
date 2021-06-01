@@ -27,6 +27,5 @@ int getWidth(node* root, int level)
         return 1;
   
     else if (level > 1)
-        return getWidth(root->left, level - 1)
-               + getWidth(root->right, level - 1);
+        return getWidth(root->left, level - 1) + getWidth(root->right, level - 1);
 }
